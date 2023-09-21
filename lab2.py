@@ -99,11 +99,13 @@ def onlyOnceWords (arr1, arr2):
 def monthsSeasons():
     months = np.array(['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'ВЕРЕСЕНЬ', 'Жовтень', 'Листопад', 'Грудень'])
     december = months[-1]
-    months = np.delete(months, 1, 0)
+    months = np.delete(months, -1, 0)
     months = np.insert(months, 0, december)
     tuplerisation = np.reshape(months, (-1, 3))
     tuplerisation = tuple(map(tuple, tuplerisation))
     print(f"Було {months}, сформовано в кортежі:\n{tuplerisation}")
+
+#15.
 
 def chooseTask(i):
     match i:
