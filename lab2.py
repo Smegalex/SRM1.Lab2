@@ -1,23 +1,17 @@
 import numpy as np
 
 # 1.
-
-
 def arrayOneToNineNineNine():
     arrayOneToNineNineNine = list(range(1000))
     print(arrayOneToNineNineNine)
 
 
 # 2.
-
-
 def unlimitedNumbersArrification(*args):
     print(f"Усі аргументи у вигляді масиву:\n{args}")
 
 
 # 3.
-
-
 def arrSmallToLarge(arr):
     arr = np.sort(arr)
     print(f"Масив за зростанням:\n{arr}")
@@ -29,8 +23,6 @@ def arrLargeToSmall(arr):
 
 
 # 4.
-
-
 def arrTogether(arr1, arr2):
     arr3 = np.sort((arr1 + arr2))
     print(f"Перший масив об'єднаний з другим відсортовані за зростанням:\n{arr3}")
@@ -38,14 +30,10 @@ def arrTogether(arr1, arr2):
 
 def arrToArr(arr1, arr2):
     arr1 = np.sort((arr1 + arr2))
-    print(
-        f"Перший масив об'єднаний з другим без використання третього відсортовані за зростанням:\n{arr1}"
-    )
+    print(f"Перший масив об'єднаний з другим без використання третього відсортовані за зростанням:\n{arr1}")
 
 
 # 5.
-
-
 def RandomArray(N):
     arr = []
     for i in range(N):
@@ -58,8 +46,6 @@ def RandomArray(N):
 
 
 # 6.
-
-
 def arrayReshape():
     arr = np.array(np.arange(1.0, 101.0, 1))
     print(f"Одновимірний масив:\n{arr}")
@@ -68,8 +54,6 @@ def arrayReshape():
 
 
 # 7. ?????????
-
-
 def arrToString():
     arr = np.arange(1, 101).reshape((10, 10))
     arrInString = np.array2string(arr, separator=",", suppress_small=True)
@@ -77,8 +61,6 @@ def arrToString():
 
 
 # 8.
-
-
 def vectorLineToColumn():
     vectorLine = np.arange(1, 101).reshape((1, -1))
     vectorColumn = np.reshape(vectorLine, (-1, 1))
@@ -86,24 +68,18 @@ def vectorLineToColumn():
 
 
 # 9.
-
-
 def oneTwoThreeRepeating():
     oneTwoThreeRepeatingTenTimes = np.resize(np.arange(1, 4), (1, 30))
     print(f"1 2 3 три рази:\n{oneTwoThreeRepeatingTenTimes}")
 
 
 # 10.
-
-
 def zeroArray():
     zeros = np.zeros((10, 10))
     print(f"Нульова матриця 10 на 10:\n{zeros}")
 
 
 # 11.
-
-
 def smallestAndLargestToVector():
     arr = np.array([[15, 8, -2], [36, 1, 0], [9, 12, 4], [6, 29, -3]])
     print(f"Дано матрицю:\n{arr}")
@@ -114,8 +90,6 @@ def smallestAndLargestToVector():
 
 
 # 12. 24 - Обчислити добуток найбільшого й найменшого елемента масива
-
-
 def multiplyBiggestAndSmallest(arr):
     min = np.amin(arr)
     max = np.amax(arr)
@@ -124,8 +98,6 @@ def multiplyBiggestAndSmallest(arr):
 
 
 # 13.
-
-
 def onlyOnceWords(arr1, arr2):
     onlyOnce = []
     print(f"Дано масиви:\n{arr1}\n{arr2}")
@@ -139,8 +111,6 @@ def onlyOnceWords(arr1, arr2):
 
 
 # 14.
-
-
 def monthsSeasons():
     months = np.array(
         [
@@ -228,9 +198,7 @@ def studentius():
 
         """Зберігає особисті дані студента, email, name ..."""
 
-        def __init__(
-            self, name="John Doe", email="at@at.at", degree="Bachelor", courses=[]
-        ):
+        def __init__(self, name="John Doe", email="at@at.at", degree="Bachelor", courses=[]):
             self.name = name
             self.courses = courses
             self.email = email
@@ -262,11 +230,7 @@ def studentius():
 def employtius():
     class Employee:
 
-        """Зберігає особисті дані студента, email, name ..."""
-
-        def __init__(
-            self, name="John Doe", age="41", position="manager", pay="5000", CV=[]
-        ):
+        def __init__(self, name="John Doe", age="41", position="manager", pay="5000", CV=[]):
             self.name = name
             self.age = age
             self.position = position
