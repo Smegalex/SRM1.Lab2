@@ -125,11 +125,11 @@ def monthsSeasons():
             "ВЕРЕСЕНЬ",
             "Жовтень",
             "Листопад",
-            "Грудень",
+            "Грудень"
         ]
     )
     december = months[-1]
-    months = np.delete(months, -1, 0)
+    months = np.delete(months, -1)
     months = np.insert(months, 0, december)
     tuplerisation = np.reshape(months, (-1, 3))
     tuplerisation = tuple(map(tuple, tuplerisation))
